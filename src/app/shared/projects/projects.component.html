@@ -1,0 +1,55 @@
+<div class="w-full flex flex-col justify-center place-items-center">
+    <p class="text-8xl text-center text-seasalt font-semibold mb-16">Proyectos</p>
+    <div class="flex flex-col gap-12">
+        <app-proyect-card [landingPage]="'https://franco-pertusati.github.io/Gastronimic-system-Pertusati/'"
+            [photo]="'assets/ProyectsScreenshots/SG.png'" [repo]="'https://github.com/Franco-Pertusati/Gastronimic-system-Pertusati'">
+            <div>
+                <p class="mb-4 text-2xl font-semibold">Sistema de gestion gastronomico</p>
+                <p class="mb-4">Un software que hacia falta en el bar en el que trabajaba para agilizar la
+                    administración de
+                    pedidos de las
+                    mesas las ventas del mostrador y llevar una cuenta clara en la caja. Dado que en ese momento mis
+                    conocimientos se limitaban a HTML, CSS y JS lo hice completamente en vanilla lo que hizo dificultosa
+                    su
+                    escalabilidad. Tengo en mente crear uno utilizando Angular 18, Angular material y CDK con la
+                    finalidad de
+                    poder proveer un servicio economico enfocado a locales chicos.
+                </p>
+            </div>
+        </app-proyect-card>
+        <app-proyect-card [landingPage]="'https://franco-pertusati.github.io/Trello-Clon/'" [repo]="'https://github.com/Franco-Pertusati/Trello-Clon'"
+            [photo]="'assets/ProyectsScreenshots/TC.png'">
+            <p class="mb-4 text-2xl font-semibold">Clon de Trello con Angular 18</p>
+            <p class="mb-4">
+                Un clon hecho para aprender a usar Angular CDK y Angular Material y así poder implementar
+                fácilmente funcionalidades como el drag and drop, overlays o diálogos. También me a sido de ayuda para
+                terminar de afianzar mi conocimiento en Tailwind
+            </p>
+        </app-proyect-card>
+        <app-proyect-card [photo]="'assets/ProyectsScreenshots/SO.png'" [repo]="'https://github.com/Franco-Pertusati/Sistema-Odontologico-Angular'">
+            <p class="mb-4 text-2xl font-semibold">Sistema para clinicas dentales</p>
+            <p class="mb-4">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero quod necessitatibus perferendis
+                exercitationem, repudiandae iste alias suscipit ea similique! In ea maiores ex laborum quo optio
+                molestiae eaque possimus exercitationem. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Molestiae perspiciatis cumque, illum unde provident animi expedita. Asperiores consectetur vitae esse
+                vero ipsa quaerat, quo repudiandae nostrum hic harum quas tempore.
+            </p>
+        </app-proyect-card>
+        <app-proyect-card [photo]="'assets/ProyectsScreenshots/EC.png'" [repo]="'https://github.com/Franco-Pertusati/practica-Angular-Ecomerce'">
+            <p class="mb-4 text-2xl font-semibold">E-comerce con Angular 18</p>
+            <p class="mb-4">
+                Proyecto que me sirvió de practica para poder entender lo básico de angular como el routing, llamadas a
+                APIs, servicios y la nueva sintaxis de Angular.
+            </p>
+        </app-proyect-card>
+        <app-proyect-card>
+            <p class="mb-4 text-2xl font-semibold">Juegos hechos en Angular y Unity 3d</p>
+            <p class="mb-4">
+                Uno es un juego en 3D hecho en Unity para Android en el que le hice los assets con Blender y la
+                programación en c#. El otro juego es una aventura grafica hecha en Angular para participar en una game
+                jam de itch.io
+            </p>
+        </app-proyect-card>
+    </div>
+</div>

@@ -1,0 +1,31 @@
+:root {
+    --mainColor: #722df9;
+    --c1: #f7b267;
+}
+
+.bg {
+    z-index: 0;
+    background: hsla(260, 94%, 58%, 1);
+    background: linear-gradient(90deg, hsla(260, 94%, 58%, 1) 0%, hsla(270, 95%, 58%, 1) 50%, hsla(260, 94%, 58%, 1) 100%);
+}
+
+.circle {
+    height: 250px;
+    width: 250px;
+    background: hsla(31, 90%, 69%, 1);
+    background: linear-gradient(90deg, hsla(31, 90%, 69%, 1) 0%, hsla(39, 90%, 69%, 1) 100%);
+    border-radius: 50%;
+    box-shadow: 4px 4px 14px 0px rgba(0, 0, 0, 0.3);
+}
+
+.c2 {
+    position: absolute;
+    top: 20%;
+    left: 25%;
+}
+
+.c1 {
+    position: absolute;
+    bottom: 10%;
+    right: 25%;
+}
