@@ -6,8 +6,7 @@
 .bg {
     background: hsla(269, 95%, 58%, 1);
 
-    background: linear-gradient(180deg, rgb(144, 48, 247) 0%, hsla(260, 94%, 58%, 1) 100%);
-}
+    background: linear-gradient(180deg, hsla(268, 84%, 63%, 1) 0%, hsla(260, 94%, 58%, 1) 100%);}
 
 .circle {
     height: 250px;
@@ -15,7 +14,7 @@
     background: hsla(31, 90%, 69%, 1);
     background: linear-gradient(90deg, hsla(31, 90%, 69%, 1) 0%, hsla(39, 90%, 69%, 1) 100%);
     border-radius: 50%;
-    box-shadow: 4px 4px 14px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 4px 0px 14px 0px rgba(0, 0, 0, 0.3);
     z-index: 0;
 }
 
