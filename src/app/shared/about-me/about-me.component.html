@@ -11,9 +11,13 @@
             html, css y js.
         </p>
         <div class="mt-10 w-full flex justify-center gap-4 col-span-2">
-            <app-anchor><i class="bi bi-download"></i><span>Descargar CV</span></app-anchor>
-            <app-anchor><i class="bi bi-linkedin"></i><span>Linkedin</span></app-anchor>
-            <app-anchor><i class="bi bi-github"></i><span>GitHub</span></app-anchor>
+            <a class="px-6 py-2 bg-mainColor text-seasalt rounded-full flex gap-4 transition-all hover:scale-105 cursor-pointer text-xl hover:shadow-md"
+                href="/assets/Pertusati Franco CV.pdf" download="Pertusati Franco CV.pdf"><i
+                    class="bi bi-download"></i>Descargar CV</a>
+            <app-anchor [link]="'https://www.linkedin.com/in/franco-pertusati-571308316/'"><i
+                    class="bi bi-linkedin"></i><span>Linkedin</span></app-anchor>
+            <app-anchor [link]="'https://github.com/Franco-Pertusati'"><i
+                    class="bi bi-github"></i><span>GitHub</span></app-anchor>
         </div>
     </div>
     <div class="rounded-b-3xl glassCard p-10">
