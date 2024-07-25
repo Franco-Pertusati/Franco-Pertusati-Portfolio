@@ -32,7 +32,7 @@ module.exports = {
         DEFAULT: "#212529",
       },
       mainColor: {
-        DEFAULT: "#722df9",
+        DEFAULT: "#4361EE",
       },
     },
     extend: {},
