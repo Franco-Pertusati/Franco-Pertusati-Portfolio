@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
-import { BtnComponent } from "../btn/btn.component";
+import { BtnComponent } from '../btn/btn.component';
+import { AnchorComponent } from '../anchor/anchor.component';
 
 @Component({
   selector: 'app-presentation',
   standalone: true,
-  imports: [BtnComponent],
+  imports: [BtnComponent, AnchorComponent],
   templateUrl: './presentation.component.html',
-  styleUrl: './presentation.component.css'
+  styleUrl: './presentation.component.css',
 })
-export class PresentationComponent {
-
-}
+export class PresentationComponent {}

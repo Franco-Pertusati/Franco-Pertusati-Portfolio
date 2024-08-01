@@ -19,14 +19,13 @@
             tienen clientes reales.
         </p>
     </div>
-    <div class="flex flex-col gap-4 md:gap-4 glass p-4 md:p-8 rounded-b-xl">
-        <app-btn>
-            <i class="bi bi-linkedin"></i>
-            <span>LinkedIn</span>
-        </app-btn>
-        <app-btn>
-            <i class="bi bi-cloud-download"></i>
-            <span>Descargar CV</span>
-        </app-btn>
+    <div class="flex flex-col md:flex-row gap-4 md:gap-4 glass p-4 md:p-8 rounded-b-xl">
+        <a class="px-6 py-2 bg-seasalt text-mainColor rounded-full flex gap-4 transition-all font-semibold w-fit hover:bg-anti-flash_white hover:shadow-lg cursor-pointer"
+            href="https://franco-pertusati.github.io/Franco-Pertusati-Portfolio/assets/Pertusati Franco CV.pdf"
+            download="Pertusati Franco CV.pdf"><i class="bi bi-download"></i>Descargar CV</a>
+        <app-anchor [link]="'https://www.linkedin.com/in/franco-pertusati-571308316/'"><i
+                class="bi bi-linkedin"></i><span>Linkedin</span></app-anchor>
+        <app-anchor [link]="'https://github.com/Franco-Pertusati'"><i
+                class="bi bi-github"></i><span>GitHub</span></app-anchor>
     </div>
 </div>
