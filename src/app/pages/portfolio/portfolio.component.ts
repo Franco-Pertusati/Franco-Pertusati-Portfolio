@@ -11,7 +11,7 @@ import { NavbarComponent } from "../../shared/navbar/navbar.component";
   standalone: true,
   imports: [AnchorComponent, ProjectsComponent, AboutMeComponent, PresentationComponent, ProyectCardComponent, NavbarComponent],
   templateUrl: './portfolio.component.html',
-  styleUrl: './portfolio.component.sass'
+  styleUrl: './portfolio.component.css'
 })
 export class PortfolioComponent {
 
