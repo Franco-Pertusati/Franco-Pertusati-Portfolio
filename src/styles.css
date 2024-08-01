@@ -3,3 +3,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    box-sizing: border-box;
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+body {
+    background: hsla(210, 96%, 40%, 1);
+    background: linear-gradient(90deg, hsla(210, 96%, 40%, 1) 0%, hsla(201, 96%, 40%, 1) 50%, hsla(210, 96%, 40%, 1) 100%);
+}

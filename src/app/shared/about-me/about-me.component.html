@@ -1,36 +1,20 @@
+<h3 class="text-6xl font-semibold text-seasalt text-center mb-6">Sobre mi</h3>
 <div class="flex flex-col">
-    <div class="bg-seasalt rounded-t-3xl p-10">
-        <p class="text-xl">
+    <div class="bg-seasalt rounded-t-xl p-8">
+        <p>
             Hola, soy Franco Pertusati, me introduje en el mundo del desarrollo web cuando ayudaba a mi familia a abrir
             un bar, porque hacía falta un sistema de gestión gastronómica para controlar los pedidos de las mesas y
             mejorar la coordinación entre el salón, la caja y la cocina, me propuse desarrollar uno propio con nada más
             que HTML, CSS y js.
         </p>
-        <div class="mt-10 w-full flex justify-center gap-4 col-span-2">
-            <a class="px-6 py-2 bg-mainColor text-seasalt rounded-full flex gap-4 transition-all hover:scale-105 cursor-pointer text-xl hover:shadow-md"
-                href="https://franco-pertusati.github.io/Franco-Pertusati-Portfolio/assets/Pertusati Franco CV.pdf"
-                download="Pertusati Franco CV.pdf"><i class="bi bi-download"></i>Descargar CV</a>
-            <app-anchor [link]="'https://www.linkedin.com/in/franco-pertusati-571308316/'"><i
-                    class="bi bi-linkedin"></i><span>Linkedin</span></app-anchor>
-            <app-anchor [link]="'https://github.com/Franco-Pertusati'"><i
-                    class="bi bi-github"></i><span>GitHub</span></app-anchor>
-        </div>
     </div>
-    <div class="rounded-b-3xl glassCard p-10">
-        <div class="flex gap-2 mb-4">
-            <app-skill-tag>Front-End</app-skill-tag>
-            <app-skill-tag>HTML5</app-skill-tag>
-            <app-skill-tag>CSS3</app-skill-tag>
-            <app-skill-tag>Java Script</app-skill-tag>
-            <app-skill-tag>JSON</app-skill-tag>
-            <app-skill-tag>Tailwind CSS</app-skill-tag>
-        </div>
-        <div class="flex gap-2">
-            <app-skill-tag>Angular 18</app-skill-tag>
-            <app-skill-tag>Angular Material</app-skill-tag>
-            <app-skill-tag>POO</app-skill-tag>
-            <app-skill-tag>GitHub</app-skill-tag>
-            <app-skill-tag>Linux</app-skill-tag>
-        </div>
+    <div class="rounded-b-xl glass p-8 flex flex-col gap-4">
+        <a class="px-6 py-2 bg-seasalt text-mainColor rounded-full flex gap-4 transition-all font-semibold w-fit hover:bg-anti-flash_white hover:shadow-lg cursor-pointer"
+            href="https://franco-pertusati.github.io/Franco-Pertusati-Portfolio/assets/Pertusati Franco CV.pdf"
+            download="Pertusati Franco CV.pdf"><i class="bi bi-download"></i>Descargar CV</a>
+        <app-anchor [link]="'https://www.linkedin.com/in/franco-pertusati-571308316/'"><i
+                class="bi bi-linkedin"></i><span>Linkedin</span></app-anchor>
+        <app-anchor [link]="'https://github.com/Franco-Pertusati'"><i
+                class="bi bi-github"></i><span>GitHub</span></app-anchor>
     </div>
 </div>

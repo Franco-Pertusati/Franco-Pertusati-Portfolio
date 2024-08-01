@@ -24,7 +24,8 @@
     height: 600px;
     width: 600px;
     position: absolute;
-    top: -200px;
-    left: -100px;
+    transform: rotate(50deg);
+    top: -250px;
+    left: -300px;
     border-radius: 56px;
 }

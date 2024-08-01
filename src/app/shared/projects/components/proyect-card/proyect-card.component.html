@@ -1,10 +1,10 @@
-<div class="w-fit rounded-3xl">
-    <div class="flex gap-4 glassCard">
-        <div class="wasd bg-seasalt rounded-tl-3xl rounded-bl-3xl p-4 flex flex-col">
-            <div class="overflow-y-scroll h-full mb-4">
+<div class="w-fit shadow rounded-xl">
+    <div>
+        <div class="bg-seasalt p-8 flex flex-col max-h-96 rounded-t-xl">
+            <div class="overflow-y-scroll mb-4">
                 <ng-content />
             </div>
-            <div class="flex gap-4">
+            <div class="flex gap-8">
                 @if (repo) {
                 <app-anchor [link]="repo"><i class="bi bi-github"></i><span>Repositorio</span></app-anchor>
                 }
@@ -13,7 +13,7 @@
                 }
             </div>
         </div>
-        <div class="cardContainer p-4">
+        <div class="cardContainer p-8 glass rounded-b-xl">
             <div class="card bg-seasalt cursor-pointer" (click)="openDialog()">
                 <div class="tools">
                     <div class="circle">
