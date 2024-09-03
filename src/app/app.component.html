@@ -1,4 +1,12 @@
-<div class="h-full w-full">
-    <app-navbar />
+<nav
+    class="h-16 flex justify-around fixed w-full bg-gradient-to-t to-mainColor from-mainColor-2 shadow-md sm:justify-center sm:gap-14 mx-auto text-lg text-seasalt font-semibold z-30">
+    <a href="https://www.linkedin.com/in/franco-pertusati-571308316/" target="_blank" class="py-4 px-2">Contact</a>
+    <a href="#projects" class="py-4 px-2">Projects</a>
+    <a href="#abm" class="py-4 px-2">About me</a>
+    <button (click)="toggleDarkMode()" class="py-4 navBtn px-2" [attr.aria-label]="isDarkMode ? 'Cambiar al modo claro' : 'Cambiar al modo oscuro'">
+        <mat-icon>contrast</mat-icon>
+    </button>
+</nav>
+<div>
     <router-outlet />
 </div>

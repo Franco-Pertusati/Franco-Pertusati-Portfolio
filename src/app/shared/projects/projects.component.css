@@ -1,0 +1,8 @@
+@media (min-width: 1200px) {
+    .prjcontainers {
+        margin: 0 auto;
+        width: 1198px;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}

@@ -1,84 +1,23 @@
-<div class=" flex flex-col justify-center place-items-center">
-    <p class="text-6xl text-center text-seasalt font-semibold mb-16">Proyectos</p>
-    <div class="flex flex-col gap-12">
-        <app-proyect-card [landingPage]="'https://franco-pertusati.github.io/Gastronimic-system-Pertusati/'"
-            [photo]="'assets/ProyectsScreenshots/SG.png'"
-            [repo]="'https://github.com/Franco-Pertusati/Gastronimic-system-Pertusati'">
-            <div>
-                <p class="mb-4 text-2xl font-semibold">Sistema de gestión gastronómico</p>
-                <p class="mb-4">
-                    Un software que hacía falta en el bar en el que trabajaba. Para agilizar la administración de
-                    pedidos de las mesas, las ventas del mostrador y llevar una cuenta clara en la caja. Dado que en ese
-                    momento mis conocimientos se limitaban a HTML, CSS y JS lo hice completamente en vanilla lo que hizo
-                    dificultosa su escalabilidad. Tengo en mente crear uno utilizando Angular 18, Angular material y CDK
-                    con la finalidad de poder proveer un servicio económico enfocado a locales chicos.
-                    <br>
-                    Algunas de las funcionalidades que ofrece son:
-                </p>
-                <ul class="font-semibold flex flex-col gap-2">
-                    <li>- Ventas por mostrador.</li>
-                    <li>- Movimientos de caja.</li>
-                    <li>- Múltiples medios de pago</li>
-                    <li>- Carga, eliminación y actualización de datos.</li>
-                    <li>- Categorías de productos.</li>
-                    <li>- Precios y costos de productos.</li>
-                    <li>- Deshabilitar productos cuando sea necesario.</li>
-                    <li>- Impresión de comandas</li>
-                    <li>- Impresión de tickets de control de mesa para clientes.</li>
-                    <li>- Personalización de tickets como mensajes personalizados al pie, nitidez o tamaño de la fuente.
-                    </li>
-                    <li>- Reporte diario de ventas.</li>
-                    <li>- Venta en mesas.</li>
-                    <li>- Traslado de consumos entre mesas.</li>
-                </ul>
-            </div>
-        </app-proyect-card>
-        <app-proyect-card [landingPage]="'https://franco-pertusati.github.io/Trello-Clon/'"
-            [repo]="'https://github.com/Franco-Pertusati/Trello-Clon'" [photo]="'assets/ProyectsScreenshots/TC.png'">
-            <p class="mb-4 text-2xl font-semibold">Clon de Trello con Angular 18</p>
-            <p class="mb-4">
-                Un clon hecho para aprender a usar Angular CDK y Angular Material para poder implementar fácilmente
-                funcionalidades como el drag and drop, overlays o diálogos. También me ha sido de ayuda para terminar de
-                afianzar mi conocimiento en Tailwind.
-            </p>
-        </app-proyect-card>
-        <app-proyect-card [photo]="'assets/ProyectsScreenshots/SO.png'"
-            [repo]="'https://github.com/Franco-Pertusati/Sistema-Odontologico-Angular'">
-            <p class="mb-4 text-2xl font-semibold">Sistema para clínicas dentales</p>
-            <p class="mb-4">
-                Un Dentista me encargó que recree el sistema que utiliza en su trabajo, con mejoras en la experiencia de
-                usuario para poder señalar el estado de cada diente en el odontograma de una manera más ágil,
-                implementar una forma de almacenar los datos con un método más seguro, en la que el usuario nunca pierda
-                el acceso e implementación de la API de Google Calendar para sincronizar y programar citas.
-            </p>
-        </app-proyect-card>
-        <app-proyect-card [photo]="'assets/ProyectsScreenshots/EC.png'"
-            [repo]="'https://github.com/Franco-Pertusati/practica-Angular-Ecomerce'">
-            <p class="mb-4 text-2xl font-semibold">E-comerce con Angular 18</p>
-            <p class="mb-4">
-                Proyecto que me sirvió de práctica para poder entender lo básico de Angular como el routing, llamadas a
-                APIs, servicios y la nueva sintaxis de Angular.
-            </p>
-        </app-proyect-card>
-        <app-proyect-card [photo]="'assets/ProyectsScreenshots/GM.png'">
-            <p class="mb-4 text-2xl font-semibold">juego hecho en unity para Android</p>
-            <p class="mb-4">
-                Un juego arcade sencillo que empecé a desarrollar a mediados de 2022 con el objetivo de publicarlo en la
-                PlayStore. Si bien al cabo de 4 meses logré completar el bucle de juego y la interfaz de usuario, nunca
-                lo llegué a publicar.
-            </p>
-        </app-proyect-card>
-        <app-proyect-card [photo]="'assets/ProyectsScreenshots/TD.png'"
-            [landingPage]="'https://franco-pertusati.github.io/ToDo-App-Vanilla/'"
-            [repo]="'https://github.com/Franco-Pertusati/ToDo-App-Vanilla'">
-            <p class="mb-4 text-2xl font-semibold">Todo App Vanilla</p>
-            <p class="mb-4">
-                Un proyecto de una tarde que me propuse hacer para probar si lograba crear una aplicación reactiva de
-                una forma más eficiente que el Sistema gastronómico, que tenía la deficiencia de que al agregar o
-                eliminar un elemento de una lista ésta se borra por completo para volver a renderizarse desde cero con
-                la modificación solicitada, sin embargo en el Todo App sólo se modifican los elementos correspondientes
-                sin necesidad de re-renderizar los que no cambiaron.
-            </p>
-        </app-proyect-card>
-    </div>
+<div class="mx-auto mb-16 w-fit">
+    <h2 class="text-6xl mt-12 text-mainColor font-semibold">Projects</h2>
+</div>
+<div class="w-full prjcontainers flex flex-col">
+    <app-p-card [bgImage]="'https://i.pinimg.com/564x/78/ae/aa/78aeaa77062bf1c7fdfe2a7c8cdbecd7.jpg'"
+        [title]="'Sistema gastronomico'" [repo]="'https://github.com/Franco-Pertusati/Gastronimic-system-Pertusati'"
+        [preview]="'https://franco-pertusati.github.io/Gastronimic-system-Pertusati/'"
+        [tecs]="['HTML', 'CSS', 'JavaScript', 'Local storage']"
+        [gifs]="['assets/SG-photos/1.gif', 'assets/SG-photos/2.gif', 'assets/SG-photos/3.gif', 'assets/SG-photos/4.gif']">
+        A software solution that was missing at the bar where I worked was one for managing table orders, counter sales,
+        and keeping a clear record of the cash register. Since at that time my knowledge was limited to HTML, CSS, and
+        JavaScript, I created it entirely in vanilla JavaScript. It was a significant challenge because making a large
+        system reactive without advanced tools was difficult, but it provided me with solid JavaScript skills.
+    </app-p-card>
+    <app-p-card [bgImage]="'assets/Trello-photos/11.webp'" [title]="'Trello clone'"
+        [repo]="'https://github.com/Franco-Pertusati/Trello-Clon'"
+        [preview]="'https://franco-pertusati.github.io/Trello-Clon/'"
+        [tecs]="['HTML', 'CSS', 'JavaScript', 'Local storage', 'Tailwind', 'Angular 18', 'Angular Material']"
+        [gifs]="['assets/Trello-photos/1.gif', 'assets/Trello-photos/2.gif', 'assets/Trello-photos/3.gif', 'assets/Trello-photos/4.gif']">
+        A clone created to learn how to use Angular CDK and Angular Material to easily implement features like drag and
+        drop, overlays, and dialogs. It has also helped me solidify my knowledge of Tailwind.
+    </app-p-card>
 </div>

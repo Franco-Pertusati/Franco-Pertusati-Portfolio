@@ -7,5 +7,6 @@ import { Component, Input } from '@angular/core';
   templateUrl: './anchor.component.html',
 })
 export class AnchorComponent {
-  @Input() link = '';
+  @Input() link:string = '';
+  @Input() target:string = '_blank';
 }

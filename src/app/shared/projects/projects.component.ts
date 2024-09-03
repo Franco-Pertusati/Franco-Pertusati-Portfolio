@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
-import { ProyectCardComponent } from "./components/proyect-card/proyect-card.component";
+import { PCardComponent } from "./components/p-card/p-card.component";
+import { ExtraProjectsComponent } from "./components/extra-projects/extra-projects.component";
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [ProyectCardComponent],
+  imports: [PCardComponent, ExtraProjectsComponent],
   templateUrl: './projects.component.html',
-  styleUrl: './projects.component.sass'
+  styleUrl: './projects.component.css'
 })
 export class ProjectsComponent {
-
+  
 }

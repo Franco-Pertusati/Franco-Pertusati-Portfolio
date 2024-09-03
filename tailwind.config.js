@@ -1,8 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.{html,ts}",
-  ],  theme: {
+  content: ["./src/**/*.{html,ts}"],
+  darkMode: "class",
+  theme: {
     colors: {
       seasalt: {
         DEFAULT: "#f8f9fa",
@@ -32,11 +32,11 @@ module.exports = {
         DEFAULT: "#212529",
       },
       mainColor: {
-        DEFAULT: "#0466c8",
+        DEFAULT: "#F58366",
+        2: "#F58350"
       },
     },
     extend: {},
   },
   plugins: [],
-}
-
+};

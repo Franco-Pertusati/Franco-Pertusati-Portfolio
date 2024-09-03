@@ -1,5 +1,11 @@
-<div class="flex flex-col gap-24 px-2 pb-24 md:px-24 mx-auto porf">
-    <app-presentation />
-    <app-projects id="s2" />
-    <app-about-me id="s3" /> 
+<div class="flex flex-col">
+    <div class="sm:h-screen">
+        <div class="w-full z-0 sm:fixed sm:h-screen">
+            <app-presentation />
+        </div>
+    </div>
+    <div class="z-20 pt-16 bg-platinum sm:bg-seasalt sm:border-t-platinum sm:border-t dark:bg-outer_space" id="projects">
+        <app-projects />
+        <app-about-me />
+    </div>
 </div>
