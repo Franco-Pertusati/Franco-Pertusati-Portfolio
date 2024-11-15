@@ -1,0 +1,58 @@
+nav {
+  margin-top: 12px;
+  width: 100%;
+  max-width: 460px;
+  border-radius: 60px;
+  display: flex;
+  position: fixed;
+  transition: all ease .1s;
+}
+
+nav div {
+  width: 100%;
+  justify-content: space-between;
+}
+
+nav a,
+button {
+  padding: 4px 12px;
+}
+
+.navContainer {
+  height: 50px;
+  margin-bottom: 64px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+}
+
+.scrolled {
+  padding: 12px;
+  margin-top: 0;
+  border-radius: 0;
+  width: 100vw;
+  max-width: none;
+  border-style: none;
+  border-bottom: solid 1px var(--d);
+}
+
+.scrolled div {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 460px;
+  justify-content: space-between;
+}
+
+.optionsList button {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.optionsList button:hover {
+  background-color: var(--c);
+}
+
+.languagesList span {
+  font-size: 1.5rem;
+}

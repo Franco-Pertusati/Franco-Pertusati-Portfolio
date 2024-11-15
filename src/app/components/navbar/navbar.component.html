@@ -1,0 +1,40 @@
+<div class="navContainer">
+  <nav class="win" [class.scrolled]="isScrolled">
+    <div class="flex">
+      <button [matMenuTriggerFor]="contactMenu">
+        Contacto
+      </button>
+      <a href="">Proyectos</a>
+      <a href="">Sobre mi</a>
+      <button [matMenuTriggerFor]="themeMenu">
+        <i class="material-icons">contrast</i>
+      </button>
+    </div>
+  </nav>
+</div>
+
+<mat-menu #contactMenu="matMenu">
+  <button mat-menu-item [cdkCopyToClipboard]="mail">
+    <mat-icon>content_copy</mat-icon>
+    <span>Copiar correo</span>
+  </button>
+  <a mat-menu-item>
+    <mat-icon>send</mat-icon>
+    <span>Linked in</span>
+  </a>
+</mat-menu>
+
+<mat-menu #themeMenu="matMenu" xPosition="before">
+  <button mat-menu-item (click)="toggleTheme()">
+    <mat-icon>dark_mode</mat-icon>
+    <span>Tema oscuro</span>
+  </button>
+  <button mat-menu-item>
+    <mat-icon>light_mode</mat-icon>
+    <span>Tema claro</span>
+  </button>
+  <button mat-menu-item>
+    <mat-icon>monitor</mat-icon>
+    <span>Sistema</span>
+  </button>
+</mat-menu>

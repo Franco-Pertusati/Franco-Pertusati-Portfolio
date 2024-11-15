@@ -1,30 +1,295 @@
-@import '@angular/cdk/overlay-prebuilt.css';
+:root {
+  --a: #f8f9fa;
+  --c: #e9ecef;
+  --d: #dee2e6;
+  --b: #5c6064;
+  --e: #212529;
+  --f: #f4c822;
+  --g: #fa9b2e;
+  --h: #ee5c60;
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+  --ga: #fa9b2e26;
+  --ha: #ee5c6026;
+}
+
+
+[data-theme="dark"] {
+  --a: #212529;
+  --e: #f8f9fa;
+  --d: #5c6064;
+  /* Otros colores del tema oscuro */
+}
 
 * {
-    box-sizing: border-box;
-    margin: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 65.5%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: var(--e);
+  /* border: solid 1px red; */
 }
 
-html {
-    scroll-behavior: smooth;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-p {
-    color: #212529;
+.mdc-label {
+  font-size: 1.5rem;
 }
 
-.glass {
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+.mat-mdc-radio-group {
+  display: flex;
+  flex-direction: column;
 }
 
-nav a:hover,
-.navBtn:hover {
-    text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.5);
+h1 {
+  margin: 16px 0;
+  font-size: 4.5rem;
+  background: linear-gradient(to right, var(--h), var(--g), var(--h));
+  /* Aquí defines el gradiente */
+  background-clip: text;
+  -webkit-background-clip: text;
+  /* Aplica el fondo al texto */
+  color: transparent;
+  /* Hace que el color del texto sea transparente */
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-size: bolder;
+  width: 100%;
+  text-align: center;
+}
+
+body {
+  line-height: 1.4;
+  background-color: var(--d);
+  background-image: url('/assets/appBg/image.png');
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+  background-size: 50%;
+  background-attachment: fixed;
+}
+
+span {
+  font-size: 1.5rem;
+}
+
+a {
+  padding: 0 8px;
+  color: inherit;
+  font-size: 1.5rem;
+  text-decoration: none;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+button svg {
+  height: 16px;
+  width: 16px;
+  color: var(--e);
+}
+
+a svg {
+  height: 16px;
+  width: 16px;
+  color: var(--e);
+}
+
+a:hover {
+  color: var(--b);
+}
+
+button {
+  padding: 0 8px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+input,
+textarea {
+  outline: none;
+}
+
+input {
+  border-style: none;
+  font-size: 1.5rem;
+}
+
+.winCont {
+  width: 100vw;
+  max-width: 660px;
+  padding: 8px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid var(--c);
+  overflow: hidden;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+}
+
+.win {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: solid 1px var(--d);
+  background-color: var(--a);
+  box-shadow: 0 4px 8px rgb(0, 0, 0, .1);
+  position: relative;
+}
+
+.shadow {
+  box-shadow: 0 4px 8px rgb(0, 0, 0, .1);
+}
+
+/* UTILITIES */
+section {
+  margin-bottom: 64px;
+}
+
+.wfit {
+  width: fit-content;
+}
+
+.flex {
+  display: flex;
+}
+
+.flexColumn {
+  flex-direction: column;
+}
+
+.flexReverse {
+  flex-direction: row-reverse;
+}
+
+.alignItems {
+  align-items: center;
+}
+
+.center {
+  justify-content: center;
+}
+
+.featuresList {
+  margin: 0 auto;
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-items: center;
+}
+
+.featuresList div {
+  width: fit-content;
+  justify-self: center;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.gap8 {
+  gap: 8px;
+}
+
+.gap18 {
+  gap: 12px;
+}
+
+.gap24 {
+  gap: 54px;
+}
+
+.p12 {
+  padding: 12px;
+}
+
+.hfull {
+  height: 100%;
+}
+
+.wfull {
+  width: 100%;
+}
+
+.nBtn {
+  padding: 8px 12px;
+  border-radius: 50px;
+  border: solid 1px var(--d);
+  background-color: var(--a);
+  box-shadow: 0 4px 8px rgb(0, 0, 0, .1);
+  width: fit-content;
+}
+
+.nBtn:hover {
+  box-shadow: 0 0px 12px 2px var(--a);
+  border: solid 1px var(--a);
+}
+
+.squareBtn {
+  border-radius: 8px;
+}
+
+.projectsList {
+  width: 100vw;
+  max-width: 660px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.greenLight {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.greenLight div {
+  width: 6px;
+  height: 6px;
+  border-radius: 9px;
+  background-color: #4cff28;
+  box-shadow: 0 0 6px 4px #4cff2870;
+}
+
+.aboutTitle {
+  display: flex;
+  gap: 8px;
+  text-wrap: nowrap;
+}
+
+.mb {
+  margin-bottom: 22px;
 }

@@ -1,0 +1,33 @@
+<section>
+  <div class="projectsList">
+    <div class="win titleWin">
+      <h2>Proyectos</h2>
+    </div>
+    <div class="flex flexColumn gap18">
+      <div>
+        <app-project-card i18n [title]="'Sistema Gastronomico'" [img]="'assets/SG-photos/f1.png'"
+          [repoLink]="'https://github.com/Franco-Pertusati/Gastronimic-system-Pertusati'"
+          [prevLink]="'https://franco-pertusati.github.io/Gastronimic-system-Pertusati/'"
+          [technologies]="['HTML', 'CSS', 'VanillaJS', 'Local Storage']">
+          I developed a software to efficiently manage table orders, track customer bills, generate and print order
+          slips for both the customer and the kitchen, as well as keep a record of the cash register and work shifts.
+          Additionally, the system stores sales data for future analysis.
+          This project came about while I was working at a bar during my studies. Handling these tasks manually with
+          paper and pencil proved to be inefficient and prone to errors. I wanted to create a digital solution to
+          streamline these processes, so I developed it using my knowledge of HTML, CSS, and JavaScript at the time.
+        </app-project-card>
+      </div>
+      <app-project-card [title]="'link Shortener'" [img]="'assets/linkShortener/f1.png'"
+        [imgResponisve]="'assets/linkShortener/f2.png'"
+        [repoLink]="'https://github.com/Franco-Pertusati/Gastronimic-system-Pertusati'"
+        [prevLink]="'https://franco-pertusati.github.io/Gastronimic-system-Pertusati/'"
+        [technologies]="['Angular18', 'Firebase', 'ExpressJS', 'NodeJS']">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus ipsam quisquam labore commodi delectus
+        modi
+        nemo asperiores quidem impedit harum, repudiandae tempore, dignissimos est explicabo, ratione dicta esse
+        laborum
+        quasi!
+      </app-project-card>
+    </div>
+  </div>
+</section>

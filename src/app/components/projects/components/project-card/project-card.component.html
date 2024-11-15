@@ -1,0 +1,31 @@
+<div class="win flex flexColumn gap8">
+  <div class="imgContainer">
+    <img [src]="img" alt="">
+    @if (imgResponisve) {
+    <img [src]="imgResponisve" alt="" class="imgResponisve">
+    }
+  </div>
+  <div class="flex gap8 mb">
+    @for (tec of technologies; track $index) {
+    <span class="tecSpan">{{tec}}</span>
+    }
+  </div>
+  <h2>{{title}}</h2>
+  <span class="mb">
+    <ng-content />
+  </span>
+  <div class="flex gap8">
+    @if (prevLink) {
+    <a [href]="prevLink">
+      <span>Preview</span>
+      <i class="material-icons">link</i>
+    </a>
+    }
+    @if (repoLink) {
+    <a [href]="repoLink">
+      <span>Repository</span>
+      <i class="material-icons">link</i>
+    </a>
+    }
+  </div>
+</div>

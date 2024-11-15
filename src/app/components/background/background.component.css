@@ -1,0 +1,24 @@
+.luminaria {
+  width: 50vw;
+  height: 60vh;
+  position: fixed;
+  top: 30vh;
+  left: 25vw;
+  z-index: -20;
+  display: flex;
+  gap: 100px;
+}
+
+.light1 {
+  width: 100%;
+  border-radius: 50%;
+  background-color: var(--ha);
+  box-shadow: 0 0 100px 100px var(--ha);
+}
+
+.light2 {
+  width: 100%;
+  border-radius: 50%;
+  background-color: var(--ga);
+  box-shadow: 0 0 100px 100px var(--ga);
+}
