@@ -1,31 +1,35 @@
-<div class="win flex flexColumn gap8">
-  <div class="imgContainer">
-    <img [src]="img" alt="">
+<div class="projectContainer flex" [ngClass]="customClasses">
+  <div class="descriptionZone">
+    <div class="flex flexColumn hfull gap22">
+      <h3>{{title}}</h3>
+      <span class="hfull">
+        <ng-content />
+      </span>
+      <div class="tecContainer">
+        <div class="marquee-content">
+          @for (tec of technologies; track $index) {
+            <span>{{tec}}</span>
+          }
+        </div>
+      </div>
+      <div class="flex gap22">
+        <a [href]="repoLink">
+          <span>Github</span>
+          <i class="material-icons">open_in_new</i>
+        </a>
+        <a [href]="prevLink">
+          <span>Preview</span>
+          <i class="material-icons">link</i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="imgZone">
     @if (imgResponisve) {
-    <img [src]="imgResponisve" alt="" class="imgResponisve">
+      <img [src]="imgResponisve" alt="" class="imgResponisve">
     }
-  </div>
-  <div class="flex gap8 mb">
-    @for (tec of technologies; track $index) {
-    <span class="tecSpan">{{tec}}</span>
-    }
-  </div>
-  <h2>{{title}}</h2>
-  <span class="mb">
-    <ng-content />
-  </span>
-  <div class="flex gap8">
-    @if (prevLink) {
-    <a [href]="prevLink">
-      <span>Preview</span>
-      <i class="material-icons">link</i>
-    </a>
-    }
-    @if (repoLink) {
-    <a [href]="repoLink">
-      <span>Repository</span>
-      <i class="material-icons">link</i>
-    </a>
+    @if (img) {
+      <img [src]="img" alt="" class="imgDesktop">
     }
   </div>
 </div>

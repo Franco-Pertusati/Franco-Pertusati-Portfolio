@@ -1,10 +1,11 @@
+import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-project-card',
   standalone: true,
-  imports: [MatIconModule],
+  imports: [MatIconModule, CommonModule],
   templateUrl: './project-card.component.html',
   styleUrl: './project-card.component.css'
 })
@@ -16,4 +17,5 @@ export class ProjectCardComponent {
   @Input() img = ''
   @Input() imgResponisve = ''
   @Input() technologies: string[] = []
+  @Input() customClasses: string | string[] | { [key: string]: boolean } = '';
 }

@@ -7,6 +7,7 @@
   --f: #f4c822;
   --g: #fa9b2e;
   --h: #ee5c60;
+  --i: #ee5cc9;
 
   --ga: #fa9b2e26;
   --ha: #ee5c6026;
@@ -32,8 +33,10 @@
 
 .container {
   display: flex;
+  gap: 52px;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .mdc-label {
@@ -59,22 +62,27 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 3rem;
   font-weight: bolder;
+  text-align: center;
+  color: var(--e);
 }
 
 h3 {
   font-size: 1.5rem;
   font-size: bolder;
   width: 100%;
-  text-align: center;
+}
+
+hr {
+  color: transparent;
+  height: 32px;
 }
 
 body {
   line-height: 1.4;
-  background-color: var(--d);
+  background-color: var(--a);
   background-image: url('/assets/appBg/image.png');
-  background-size: cover;
   background-repeat: repeat;
   background-position: center;
   background-size: 50%;
@@ -293,3 +301,4 @@ section {
 .mb {
   margin-bottom: 22px;
 }
+

@@ -1,43 +1,106 @@
-.imgContainer {
-  padding: 24px;
-  height: fit-content;
-  background: #e9694c;
-  /* background: var(--a); */
-  border-radius: 6px;
+.projectContainer {
+  padding: 14px;
+  width: 100vw;
+  max-width: 660px;
+  height: 100vh;
+  max-height: 360px;
+  border-radius: 20px;
   overflow: hidden;
   position: relative;
 }
 
-.imgContainer img {
-  width: 100%;
-  box-shadow: 0 4px 8px rgb(0, 0, 0, .3);
-  border: solid 1px #f8f9fa;
-  border-radius: 8px;
+.bgDark {
+  background-color: var(--e);
 }
 
-.tecSpan {
-  padding: 4px 8px;
-  border-radius: 8px;
-  background-color: var(--c);
-  font-weight: bolder;
-}
-
-a {
-  padding: 4px 8px;
-  border-radius: 8px;
-  font-weight: bolder;
-  background-color: var(--c);
-}
-
-a:hover {
+.bgDark span {
   color: var(--a);
-  box-shadow: 0 4px 4px rgb(0, 0, 0, .1);
 }
 
-.imgContainer .imgResponisve {
-  width: 30%;
+.bgDark h3 {
+  color: var(--a);
+}
+
+.bgDark i {
+  color: var(--a);
+}
+
+.bgLight {
+  background: rgba(255, 255, 255, 0.459);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid var(--a);
+}
+
+.descriptionZone {
+  width: 316px;
+  overflow: hidden;
+}
+
+.imgZone {
+  width: 316px;
+  position: relative;
+}
+
+.imgResponisve {
+  right: 0;
+  top: 20%;
+  width: 80%;
+  border-radius: 8px;
   position: absolute;
-  right: 0px;
-  top: 30%;
-  right: 10px;
+  transition: all ease .3s;
+}
+
+.imgDesktop {
+  top: 20%;
+  left: 18px;
+  width: 208%;
+  border-radius: 8px;
+  position: absolute;
+  transition: all ease .3s;
+}
+
+.projectContainer:hover {
+  box-shadow: 0 4px 8px rgb(0, 0, 0, .2);
+  cursor: pointer;
+}
+
+.projectContainer:hover .imgDesktop {
+  top: 0;
+}
+
+.projectContainer:hover .imgResponisve {
+  top: 0;
+}
+
+.tecContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  mask-image: linear-gradient(to right, #ffffff00 0%, #ffffff 20%, #ffffff 80%, #ffffff00 100%);
+}
+
+.tecContainer span {
+  text-wrap: nowrap;
+  font-style: oblique;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+.marquee-content {
+  display: inline-flex;
+  animation: marquee-animation 10s linear infinite;
+  gap: 24px;
+  display: flex;
+}
+
+@keyframes marquee-animation {
+  0% {
+    transform: translateX(316px);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
 }
