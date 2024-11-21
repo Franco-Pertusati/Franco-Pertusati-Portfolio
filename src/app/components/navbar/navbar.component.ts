@@ -27,9 +27,8 @@ export class NavbarComponent {
   mail = 'pertusatifranco100@gmail.com';
   isDarkTheme = false;
 
-  toggleTheme() {
-    this.isDarkTheme = !this.isDarkTheme;
-    document.documentElement.setAttribute('data-theme', this.isDarkTheme ? 'dark' : 'light');
+  setTheme(value:string) {
+    document.documentElement.setAttribute('data-theme', value);
   }
 
   @HostListener('window:scroll', ['$event'])

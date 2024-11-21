@@ -5,7 +5,6 @@ nav {
   border-radius: 60px;
   display: flex;
   position: fixed;
-  transition: all ease .1s;
 }
 
 nav div {
@@ -34,7 +33,10 @@ button {
   width: 100vw;
   max-width: none;
   border-style: none;
-  border-bottom: solid 1px var(--d);
+  background: var(--glass2);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--antiflash-white);
 }
 
 .scrolled div {
@@ -44,15 +46,24 @@ button {
   justify-content: space-between;
 }
 
-.optionsList button {
-  width: 100%;
-  border-radius: 8px;
-}
-
-.optionsList button:hover {
-  background-color: var(--c);
-}
-
 .languagesList span {
   font-size: 1.5rem;
+}
+
+.optionBtn {
+  padding: 8px 6px;
+  width: 100%;
+  display: flex;
+  gap: 8px;
+  justify-content: start;
+  color: var(--eerie-black);
+  background-color: var(--seasalt);
+}
+
+.optionBtn:hover {
+  background-color: var(--platinum);
+}
+
+.matMenu {
+  box-shadow: 0 0 0 20px var(--seasalt);
 }

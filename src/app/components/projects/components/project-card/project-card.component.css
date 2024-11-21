@@ -9,27 +9,44 @@
   position: relative;
 }
 
+.projectContainer h3 {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+
 .bgDark {
-  background-color: var(--e);
+  background-color: #212529;
 }
 
 .bgDark span {
-  color: var(--a);
+  color: #f8f9fa;
 }
 
 .bgDark h3 {
-  color: var(--a);
+  color: #f8f9fa;
 }
 
 .bgDark i {
-  color: var(--a);
+  color: #f8f9fa;
 }
 
 .bgLight {
   background: rgba(255, 255, 255, 0.459);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(8px);
-  border: 1px solid var(--a);
+  border: 1px solid #f8f9fa;
+}
+
+.bgLight span {
+  color: #212529;
+}
+
+.bgLight h3 {
+  color: #212529;
+}
+
+.bgLight i {
+  color: #212529;
 }
 
 .descriptionZone {
