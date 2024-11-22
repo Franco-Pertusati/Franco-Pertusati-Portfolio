@@ -1,11 +1,11 @@
-<div class="projectContainer flex" [ngClass]="customClasses">
+<div class="projectContainer" [ngClass]="customClasses">
   <div class="descriptionZone">
-    <div class="flex flexColumn hfull gap22">
+    <div class="descriptionZoneContent">
       <h3>{{title}}</h3>
-      <span class="hfull">
+      <span>
         <ng-content />
       </span>
-      <div class="tecContainer">
+      <div class="tecContainer hfull">
         <div class="marquee-content">
           @for (tec of technologies; track $index) {
             <span>{{tec}}</span>

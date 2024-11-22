@@ -15,6 +15,7 @@ nav div {
 nav a,
 button {
   padding: 4px 12px;
+  text-wrap: none;
 }
 
 .navContainer {
@@ -51,7 +52,7 @@ button {
 }
 
 .optionBtn {
-  padding: 8px 6px;
+  padding: 8px 16px;
   width: 100%;
   display: flex;
   gap: 8px;
@@ -66,4 +67,18 @@ button {
 
 .matMenu {
   box-shadow: 0 0 0 20px var(--seasalt);
+}
+
+@media (max-width: 618px) {
+  nav a, nav button {
+    padding: 4px 8px;
+    text-wrap: none;
+  }
+}
+
+@media (max-width: 321px) {
+  nav a, nav button {
+    padding: 4px 4px;
+    text-wrap: none;
+  }
 }

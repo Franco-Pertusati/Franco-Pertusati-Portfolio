@@ -27,9 +27,38 @@ export class NavbarComponent {
   mail = 'pertusatifranco100@gmail.com';
   isDarkTheme = false;
 
-  setTheme(value:string) {
-    document.documentElement.setAttribute('data-theme', value);
+  setTheme(value: string | 'system') {
+    if (value === 'system') {
+      // Detecta el tema del sistema
+      const isSystemDark = window.matchMedia(
+        '(prefers-color-scheme: dark)'
+      ).matches;
+      this.isDarkTheme = isSystemDark; // Actualiza la variable de control
+      document.documentElement.setAttribute(
+        'data-theme',
+        isSystemDark ? 'dark' : 'light'
+      );
+    } else {
+      this.isDarkTheme = value === 'dark';
+      document.documentElement.setAttribute('data-theme', value);
+    }
   }
+
+  // Escucha cambios en las preferencias del sistema
+  listenToSystemThemeChanges() {
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    mediaQuery.addEventListener('change', (event) => {
+      if (event.matches) {
+        // Si el sistema cambia a modo oscuro
+        this.setTheme('dark');
+      } else {
+        // Si el sistema cambia a modo claro
+        this.setTheme('light');
+      }
+    });
+  }
+
+  ngOnInit() {}
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll(event: Event): void {

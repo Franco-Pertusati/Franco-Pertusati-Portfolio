@@ -4,8 +4,8 @@
       <button [matMenuTriggerFor]="contactMenu">
         Contacto
       </button>
-      <a href="">Projects</a>
-      <a href="">About Me</a>
+      <a href="#projects">Projects</a>
+      <a href="#aboutMe">About Me</a>
       <button [matMenuTriggerFor]="themeMenu">
         <i class="material-icons">contrast</i>
       </button>
@@ -19,7 +19,7 @@
       <mat-icon>content_copy</mat-icon>
       <span>Copy Mail</span>
     </button>
-    <a href="https://www.linkedin.com/in/franco-pertusati-571308316/" target="_blank" class="optionBtn">
+    <a href="https://dub.sh/MyLinkedInProfile" target="_blank" class="optionBtn">
       <mat-icon>send</mat-icon>
       <span>Linked in</span>
     </a>
@@ -36,7 +36,7 @@
       <mat-icon>light_mode</mat-icon>
       <span>Light mode</span>
     </button>
-    <button class="optionBtn">
+    <button class="optionBtn" (click)="setTheme('system')">
       <mat-icon>monitor</mat-icon>
       <span>System</span>
     </button>

@@ -1,4 +1,5 @@
 .projectContainer {
+  display: flex;
   padding: 14px;
   width: 100vw;
   max-width: 660px;
@@ -18,15 +19,19 @@
   background-color: #212529;
 }
 
-.bgDark span {
-  color: #f8f9fa;
-}
-
-.bgDark h3 {
-  color: #f8f9fa;
-}
-
+.bgDark span,
+.bgDark h3,
 .bgDark i {
+  color: #f8f9fa;
+}
+
+.bgPurple {
+  background-color: #9632e5;
+}
+
+.bgPurple span,
+.bgPurple h3,
+.bgPurple i {
   color: #f8f9fa;
 }
 
@@ -37,14 +42,8 @@
   border: 1px solid #f8f9fa;
 }
 
-.bgLight span {
-  color: #212529;
-}
-
-.bgLight h3 {
-  color: #212529;
-}
-
+.bgLight span,
+.bgLight h3,
 .bgLight i {
   color: #212529;
 }
@@ -52,6 +51,12 @@
 .descriptionZone {
   width: 316px;
   overflow: hidden;
+}
+
+.descriptionZoneContent {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .imgZone {
@@ -79,7 +84,6 @@
 
 .projectContainer:hover {
   box-shadow: 0 4px 8px rgb(0, 0, 0, .2);
-  cursor: pointer;
 }
 
 .projectContainer:hover .imgDesktop {
@@ -94,8 +98,8 @@
   width: 100%;
   display: flex;
   align-items: center;
-  height: 100%;
   mask-image: linear-gradient(to right, #ffffff00 0%, #ffffff 20%, #ffffff 80%, #ffffff00 100%);
+  padding: 4px 0;
 }
 
 .tecContainer span {
@@ -114,10 +118,26 @@
 
 @keyframes marquee-animation {
   0% {
-    transform: translateX(316px);
+    transform: translateX(100%);
   }
 
   100% {
     transform: translateX(-100%);
+  }
+}
+
+@media (max-width:618px) {
+  .projectContainer {
+    margin: 0 12px;
+    width: calc(100% - 24px);
+    height: fit-content;
+  }
+
+  .descriptionZone {
+    width: 100%;
+  }
+
+  .imgZone {
+    display: none;
   }
 }
